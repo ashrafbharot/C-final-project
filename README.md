@@ -1,1 +1,1 @@
-
+This repository showcases the Veterinarian Clinic System, a team project developed as part of my final assignment for the C programming course in the first semester. The system is designed to efficiently manage pet records and appointments for a veterinary clinic. Collaborating with my team, we focused on creating a user-friendly interface and optimizing data handling for clinic operations. This project helped strengthen my understanding of C programming fundamentals, file handling, and collaborative coding.
