@@ -1,0 +1,20 @@
+﻿  a1m1.c
+G:\COMPUTER PROGRAMMING\IPC 144\workshops\Assignment 1 Milestone1\core.c\a1m1.c(295,5): warning C4013: 'displayFormattedPhone' undefined; assuming extern returning int
+  core.c
+G:\COMPUTER PROGRAMMING\IPC 144\workshops\Assignment 1 Milestone1\core.c\a1m1.c(295,5): warning C4013: 'displayFormattedPhone' undefined; assuming extern returning int
+  Generating Code...
+core.obj : error LNK2005: main already defined in a1m1.obj
+core.obj : error LNK2005: test01_inputInt already defined in a1m1.obj
+core.obj : error LNK2005: test02_inputIntPositive already defined in a1m1.obj
+core.obj : error LNK2005: test03_inputIntRange already defined in a1m1.obj
+core.obj : error LNK2005: test04_inputIntRange already defined in a1m1.obj
+core.obj : error LNK2005: test05_inputCharOption already defined in a1m1.obj
+core.obj : error LNK2005: test06_inputCString already defined in a1m1.obj
+core.obj : error LNK2005: test07_inputCString already defined in a1m1.obj
+core.obj : error LNK2005: test08_inputCString already defined in a1m1.obj
+core.obj : error LNK2005: test09_displayPhone already defined in a1m1.obj
+a1m1.obj : error LNK2019: unresolved external symbol inputCString referenced in function test06_inputCString
+core.obj : error LNK2001: unresolved external symbol inputCString
+a1m1.obj : error LNK2019: unresolved external symbol displayFormattedPhone referenced in function test09_displayPhone
+core.obj : error LNK2001: unresolved external symbol displayFormattedPhone
+G:\COMPUTER PROGRAMMING\IPC 144\workshops\Assignment 1 Milestone1\core.c\x64\Debug\core.c.exe : fatal error LNK1120: 2 unresolved externals

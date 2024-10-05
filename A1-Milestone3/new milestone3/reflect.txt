@@ -1,0 +1,28 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        Assignment 1 - Milestone 3
+Full Name  : MOHAMED ASHRAF BHAROT
+Student ID#: 139539225
+Email      : mamabharot@myseneca.ca
+Section    : ZEE
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+/////////////////////////////////////////////////////////////////////////*/
+
+1. 
+void displayAllPatients(const struct Patient patient[], int max, int fmt);
+-> The displayAllPatients function displays patient data in a tabular form. It accepts an array of struct Patient objects, the maximum number of patients, and a format indicator as input. The function checks each patient data by going through array. If a patient record is identified (indicated by a non-zero patient number), the function runs the displayPatientData function to display that patient's data in the given format.
+->DisplayAllPatients function enhances the user experience by displaying all patient records in an organised and easy-to-read format. Using this it helps the administrators to go through all the patient data very easily at the same time.
+void searchPatientData(const struct Patient patient[], int max);
+->With the help of  searchPatientData function the users can search for patient records. It displays a menu with options for searching by patient number or phone number. Users can make a choice and then proceed to the related search function, either searchPatientByPatientNumber or searchPatientByPhoneNumber.
+-> It saves users time as there is no need to manually search through all patient records in order to discover a certain individual patient's data. This function helps medical personnel to  access  patient data for any emergencies or checking any prescription for treatment.
+void editPatient(struct Patient patient[], int max);
+-> The editPatient function allows users to make changes to patient records. This function asks users to enter a patient number and then attempts to locate the relevant patient record. When a match is found, then it  allows users to change the patient's data. An error message is given if no matching record is found.
+-> This function helps to maintain an up to date data of the patient as it is very important in medical field.
+2. The amount of scanf function calls in this module was drastically reduced in order to prevent buffer overflow and improve user experience. Furthermore, it is done to avoid unanticipated input buffer difficulties.When the user enters data, it is buffered until it is used by a scanf function call.If the buffer is not properly cleaned, subsequent scanf function calls may result in incorrect or unexpected behaviour.To overcome these problems, the code combines the fgets, sscanf, and clearInputBuffer routines to handle user input. The user's input is read and saved in a buffer using fgets. ClearInputBuffer, on the other hand, cleans the buffer to avoid errors and interference with the inputs.
+3. I placed these all function in module of clinic.c and its header file clinic.h 
+ a. The displayAllPatients function's objective is to provide a thorough view of all patient records. It loops through the patient array, calling the displayPatientData function to format each patient's data.
+b. The searchPatientData function looks for patient records using a menu-driven approach. Placing this function in a dedicated input or search module ensures that all search-related functionality in the application is confined in a single location.
+c. The edit Patient function's main purpose is to facilitate the modification of patient records. It prompts users for input, finds the appropriate patient record, and provides an interface for editing patient data..Placing this function in a separate module for data manipulation ensures that the application's data modification logic is isolated from other functions.
